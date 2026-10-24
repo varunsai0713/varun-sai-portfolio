@@ -8,8 +8,7 @@ const portfolioData = {
     location: "India",
     email: "varunsaiv0713@gmail.com",
     linkedinUrl: "https://www.linkedin.com/in/varun-sai-6379aa242/",
-    // TODO [PLACEHOLDER: GitHub profile URL]: Owner to replace with exact GitHub profile link
-    githubUrl: "",
+    githubUrl: "https://github.com/varunsai0713",
     // TODO [PLACEHOLDER: Profile photo]: Replace with photo URL or drop your image into public/profile.jpg
     profilePhoto: "",
     resumePath: "/Varunsai_Associate_Engineer%20.pdf",
