@@ -69,3 +69,26 @@ Guntur, India
 - Data structures and algorithms
 - Cloud-native microservices and Kubernetes
 - Spring Boot observability and Grafana
+
+## Contact form deployment
+
+The Vercel deployment sends contact messages from the `api/contact.js` serverless
+function using Gmail SMTP. Configure these variables in **Vercel → Project
+Settings → Environment Variables**:
+
+| Variable | Value |
+| --- | --- |
+| `MAIL_USER` | The Gmail address used to send messages (for this portfolio, `varunsaiv0713@gmail.com`) |
+| `CONTACT_TO` | The inbox that should receive contact messages |
+| `MAIL_APP_PASSWORD` | A Gmail App Password for `MAIL_USER` (not the normal Gmail password) |
+
+Create the App Password from the Google Account security settings after enabling
+2-Step Verification. Add the variables to the environments where the site is
+deployed (at least **Production**), save them, and redeploy so the serverless
+function receives them. Do not add the App Password to source code or commit it.
+
+The Vercel function sends mail directly; it does not use `SPRING_API_URL` or
+require the Spring Boot backend to be hosted. If sending still fails, check the
+Vercel deployment's Function Logs for `/api/contact`. A “not configured” response
+means `MAIL_APP_PASSWORD` is missing; an authentication response means the
+Gmail App Password or `MAIL_USER` is incorrect.

@@ -23,4 +23,4 @@ Use the full-stack PowerShell launcher described in the repository's main README
 
 Use a Google App Password for `varunsaiv0713@gmail.com`, not the regular account password. Never commit the App Password to source files.
 
-The deployed Vercel portfolio sends contact-form submissions through the root `api/contact.ts` function. It does not require this Spring Boot service to run online; this backend remains part of the local development setup.
+The deployed Vercel portfolio sends contact-form submissions through the root `api/contact.js` function. It does not require this Spring Boot service to run online; this backend remains part of the local development setup.
