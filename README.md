@@ -16,7 +16,7 @@ I build full-stack applications and REST APIs, with a focus on secure backend se
 - **Frontend:** React.js, HTML5, CSS3, Tailwind CSS, Figma
 - **Backend:** Spring Boot, Spring Security, Hibernate, REST APIs
 - **Databases:** MySQL, PostgreSQL
-- **Cloud and DevOps:** Google Cloud, Git, GitHub, Jenkins, Docker, Kubernetes
+- **Cloud and DevOps:** Google Cloud(GCP), Git, GitHub, Jenkins, Docker, Kubernetes
 - **Testing and monitoring:** Postman, JUnit, Prometheus
 - **Concepts:** Object-oriented programming, microservices, logging, and monitoring
 
